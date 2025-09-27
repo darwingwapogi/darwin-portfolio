@@ -1,0 +1,156 @@
+.gradient-text {
+  background: linear-gradient(90deg, #0072ff, #00c6a2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.gradient-btn {
+  background: linear-gradient(90deg, #0072ff, #00c6a2);
+  border-radius: 1rem;
+  font-weight: bold;
+  color: #fff !important;
+  padding: 0.5rem 1.5rem;
+  border: none;
+}
+
+/* Add hover effect for navbar links */
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.2s, background 0.2s;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: linear-gradient(90deg, #0072ff, #00c6a2);
+  transition: width 0.3s;
+  border-radius: 1px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0072ff;
+  background: rgba(0, 198, 162, 0.08);
+  border-radius: 0.5rem;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.profile-img {
+  object-fit: cover;
+  border: 6px solid #fff;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 48px rgba(0,114,255,0.18);
+}
+
+.gradient-title {
+  background: linear-gradient(90deg, #0072ff, #00c6a2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.badge-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-bottom: -2px;
+  margin-right: 6px;
+}
+
+.emoji {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+@media (min-width: 992px) {
+  .nav-rounded {
+    border-radius: 999px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 0.5rem 2rem;
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+  }
+
+  .nav-rounded:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  }
+}
+
+/* Dark mode for hero section */
+body.bg-dark .gradient-title,
+body.bg-dark h2,
+body.bg-dark .lead,
+body.bg-dark .text-muted,
+body.bg-dark .badge-dot {
+  color: #fff !important;
+}
+
+body.bg-dark .gradient-title {
+  -webkit-text-fill-color: #fff;
+  background: none;
+}
+
+body.bg-dark .badge-dot.bg-success {
+  background-color: #28a745 !important;
+}
+body.bg-dark .badge-dot.bg-primary {
+  background-color: #007bff !important;
+}
+
+/* Dark mode for navbar */
+body.bg-dark .navbar {
+  background: #23272f !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.32);
+}
+
+body.bg-dark .nav-rounded {
+  background: #23272f !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.32);
+}
+
+body.bg-dark .navbar-brand.gradient-text {
+  -webkit-text-fill-color: #fff;
+  background: none;
+  color: #fff !important;
+}
+
+body.bg-dark .navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+body.bg-dark .navbar-nav .nav-link:hover {
+  color: #00c6a2 !important;
+  background: rgba(0, 198, 162, 0.12);
+}
+
+body.bg-dark .gradient-btn {
+  background: linear-gradient(90deg, #0072ff, #00c6a2);
+  color: #fff !important;
+}
+
+body.bg-dark .btn-outline-secondary {
+  border-color: #444 !important;
+  color: #fff !important;
+  background: #23272f !important;
+}
+
+body.bg-dark .btn-outline-secondary:hover {
+  background: #444 !important;
+  color: #fff !important;
+}
