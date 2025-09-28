@@ -268,6 +268,11 @@ body.bg-dark .highlight-orange {
 }
 
 /* About Me Section Content */
+.about-profile-container {
+  position: relative;   /* container holds caption */
+  display: inline-block;
+}
+
 .about-profile-img {
   border-radius: 2rem;
   object-fit: cover;
@@ -275,12 +280,19 @@ body.bg-dark .highlight-orange {
   height: 260px;
   box-shadow: 0 8px 32px rgba(162,89,255,0.10);
   background: #fff;
-  border: 6px solid #fff;
   transition: transform 0.3s, box-shadow 0.3s;
+  display: block;
 }
+
 .about-profile-img:hover {
   transform: scale(1.06);
   box-shadow: 0 16px 48px rgba(162,89,255,0.18);
+}
+
+.about-profile-img-caption {
+  position: absolute;
+  bottom: -40px;  /* adjust as needed */
+  right: 210px;
 }
 
 .about-intro {
